@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Lab</title>
+  <style>
+    /* Element Selector */
+    p {
+      text-align: center;
+      color: red;
+    }
+
+    /* ID Selector */
+    #para1 {
+      color: blue;
+    }
+
+    /* Class Selector */
+    .highlight {
+      font-weight: bold;
+      color: green;
+    }
+
+    /* Universal Selector */
+    * {
+      margin: 10px;
+    }
+
+    /* Grouping Selector */
+    h3, h4 {
+      color: purple;
+    }
+
+    /* Descendant Selector */
+    div p {
+      color: orange;
+    }
+
+    /* Child Selector */
+    div > p {
+      color: teal;
+    }
+
+    /* Adjacent Sibling Selector */
+    h5 + p {
+      color: brown;
+    }
+
+    /* Attribute Selector */
+    [data-custom="test"] {
+      font-style: italic;
+      color: darkgreen;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Selectors</h1>
+
+  <h2>Element Selector</h2>
+  <p>Every paragraph will be affected by the style.</p>
+  <p>This is another paragraph.</p>
+  <hr>
+
+  <h2>ID Selector</h2>
+  <p id="para1">I am styled by the ID selector!</p>
+  <p>This paragraph is not affected by the ID selector.</p>
+  <hr>
+
+  <h2>Class Selector</h2>
+  <p class="highlight">This paragraph is styled using a class.</p>
+  <p>This paragraph is not styled by the class selector.</p>
+  <hr>
+
+  <h2>Universal Selector</h2>
+  <p>Margins are applied universally to all elements.</p>
+  <h3>Notice the spacing!</h3>
+  <hr>
+
+  <h2>Grouping Selector</h2>
+  <h3>Both H3</h3>
+  <h4>And H4 are styled</h4>
+  <hr>
+
+  <h2>Descendant Selector</h2>
+  <div>
+    <p>Paragraph inside a div is styled.</p>
+    <span>This span is not affected.</span>
+  </div>
+  <hr>
+
+  <h2>Child Selector</h2>
+  <div>
+    <p>Direct child paragraph of div is styled.</p>
+    <div>
+      <p>Nested paragraph is not affected.</p>
+    </div>
+  </div>
+  <hr>
+
+  <h2>Adjacent Sibling Selector</h2>
+  <h5>Sibling Selector</h5>
+  <p>This paragraph is adjacent to the H3.</p>
+  <p>This one is not affected.</p>
+  <hr>
+
+  <h2>Attribute Selector</h2>
+  <p data-custom="test">This paragraph uses an attribute selector.</p>
+  <p>This paragraph does not have the custom attribute.</p>
+
+</body>
+
+</html>

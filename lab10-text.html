@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Lab</title>
+
+  <style>
+    div.fmt {
+      border: 1px solid gray;
+      padding: 8px;
+    }
+
+    div.fmt h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #4CAF50;
+    }
+
+    div.fmt p {
+      text-indent: 50px;
+      text-align: justify;
+      letter-spacing: 3px;
+    }
+
+    div.fmt a {
+      text-decoration: none;
+      color: #008CBA;
+    }
+
+    div.color h1 {
+      background-color: black;
+      color: white;
+    }
+
+    div.color p {
+      color: blue;
+    }
+
+    div.color div {
+      background-color: blue;
+      color: white;
+    }
+
+    p.a {
+      text-align-last: right;
+    }
+
+    p.b {
+      text-align-last: center;
+    }
+
+    p.c {
+      text-align-last: justify;
+    }
+
+    p.ex1 {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+
+    img.a {
+      vertical-align: baseline;
+    }
+
+    img.b {
+      vertical-align: text-top;
+    }
+
+    img.c {
+      vertical-align: text-bottom;
+    }
+
+    img.d {
+      vertical-align: sub;
+    }
+
+    img.e {
+      vertical-align: super;
+    }
+
+    h3.td1 {
+      text-decoration: overline;
+      text-decoration-color: red;
+    }
+
+    h3.td2 {
+      text-decoration: line-through;
+      text-decoration-color: blue;
+    }
+
+    h3.td3 {
+      text-decoration: underline;
+      text-decoration-color: green;  
+    }
+
+    p.ex {
+      text-decoration: overline underline;
+      text-decoration-color: purple;  
+    }
+
+    h3.td4 {
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+    }
+
+    h3.td5 {
+      text-decoration-line: underline;
+      text-decoration-style: double;
+    }
+
+    h3.td6 {
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
+    }
+
+    p.tdex1 {
+      text-decoration-line: underline;
+      text-decoration-style: dashed;
+    }
+
+    p.tdex2 {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+    }
+
+    p.tdex3 {
+      text-decoration-line: underline;
+      text-decoration-color: red;
+      text-decoration-style: wavy;
+    }
+
+    h3.td7 {
+      text-decoration-line: underline;
+      text-decoration-thickness: auto;  /* this is default */
+    }
+
+    h3.td8 {
+      text-decoration-line: underline;
+      text-decoration-thickness: 5px;
+    }
+
+    h3.td9 {
+      text-decoration-line: underline;
+      text-decoration-thickness: 25%;
+    }
+
+    p.tdex4 {
+      text-decoration-line: underline;
+      text-decoration-color: red;  
+      text-decoration-style: double;
+      text-decoration-thickness: 5px;  
+    }
+
+    h3.td10 {
+      text-decoration: underline;
+    }
+
+    h3.td11 {
+      text-decoration: underline red;
+    }
+
+    h3.td12 {
+      text-decoration: underline red double;
+    }
+
+    p.tdex5 {
+      text-decoration: underline red double 5px;
+    }
+
+    p.uppercase {
+      text-transform: uppercase;
+    }
+
+    p.lowercase {
+      text-transform: lowercase;
+    }
+
+    p.capitalize {
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Formatting Text</h2>
+  <div class="fmt">
+    <h1>text formatting</h1>
+    <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+    The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+    <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+  </div>
+  <br>
+
+  <h2>Text and Background Color</h2>
+  <div class="color">
+    <h1>This is a Heading</h1>
+    <p>This paragraph has a blue text.</p>
+    <div>This is a div.</div>
+  </div>
+  <br>
+
+  <h2 style="text-align: center;">Center Aligned Text</h2>
+
+  <h2 style="text-align: left;">Left Aligned Text</h2>
+
+  <h2 style="text-align: right;">Right Aligned Text</h2>
+
+  <h2>Justify Aligned Text</h2>
+  <div style="text-align: justify; width: 400px;">
+    In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+  </div>
+  <br>
+  <br>
+
+  <h2>text-align-last Property</h2>
+
+  <h3>text-align-last: right:</h3>
+  <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+  <h3>text-align-last: center:</h3>
+  <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+  <h3>text-align-last: justify:</h3>
+  <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+  <br>
+  <br>
+
+  <h2>Text Direction</h2>
+  <p>This is the default text direction.</p>
+  <p class="ex1">This is right-to-left text direction.</p>
+
+  <br><br>
+
+  <h2>The vertical-align Property</h2>
+
+  <h3>vertical-align: baseline (default):</h3>
+  <p>An <img class="a" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 
+
+  <h3>vertical-align: text-top:</h3>
+  <p>An <img class="b" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+
+  <h3>vertical-align: text-bottom:</h3>
+  <p>An <img class="c" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+  <h3>vertical-align: sub:</h3>
+  <p>An <img class="d" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a sub alignment.</p> 
+
+  <h3>vertical-align: sup:</h3>
+  <p>An <img class="e" src="https://www.w3schools.com/css/sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+
+  <br><br>
+  <h2>Text Decoration</h2>
+
+  <h3 class="td1">Overline text decoration</h3>
+  <h3 class="td2">Line-through text decoration</h3>
+  <h3 class="td3">Underline text decoration</h3>
+  <p class="ex">Overline and underline text decoration.</p>
+
+  <h2>Text Decoration - Style</h2>
+
+  <h3 class="td4">Heading 1</h3>
+  <h3 class="td5">Heading 2</h3>
+  <h3 class="td6">Heading 3</h3>
+  <p class="tdex1">A paragraph.</p>
+  <p class="tdex2">Another paragraph.</p>
+  <p class="tdex3">Another paragraph.</p>
+
+  <h2>Text Decoration - Thickness</h2>
+
+  <h3 class="td7">Heading 1</h3>
+  <h3 class="td8">Heading 2</h3>
+  <h3 class="td9">Heading 3</h3>
+  <p class="tdex4">A paragraph.</p>
+
+  <h2>Text Decoration - Shorthand</h2>
+
+  <h3 class="td10">Heading 1</h3>
+  <h3 class="td11">Heading 2</h3>
+  <h3 class="td12">Heading 3</h3>
+  <p class="tdex5">A paragraph.</p>
+
+  <br><br>
+  <h2>Text Transform</h2>
+
+  <p class="uppercase">This text is transformed to uppercase.</p>
+  <p class="lowercase">This text is transformed to lowercase.</p>
+  <p class="capitalize">This text is capitalized.</p>
+  
+</body>
+
+</html>

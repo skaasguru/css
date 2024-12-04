@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Lab</title>
+  <style>
+    h1 {
+      background-color: green;
+    }
+    
+    div {
+      background-color: lightblue;
+    }
+    
+    p {
+      background-color: yellow;
+    }
+
+    p.bg-image {
+      background-image: url("https://www.w3schools.com/css/paper.gif");
+      height: 100px;
+    }
+
+    div.full {
+      background-color: green;
+      opacity: 1;
+    }
+
+    div.first {
+      background-color: green;
+      opacity: 0.1;
+    }
+
+    div.second {
+      background-color: green;
+      opacity: 0.3;
+    }
+
+    div.third {
+      background-color: green;
+      opacity: 0.6;
+    }
+    
+    div.rgba100 {
+      background: rgb(0, 128, 0);
+    }
+
+    div.rgba10 {
+      background: rgba(0, 128, 0, 0.1);
+    }
+
+    div.rgba30 {
+      background: rgba(0, 128, 0, 0.3);
+    }
+
+    div.rgba60 {
+      background: rgba(0, 128, 0, 0.6);
+    }
+
+    div.rgba100 h1, div.rgba10 h1, div.rgba30 h1, div.rgba60 h1 {
+      background: unset;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Background Color</h2>
+  <div>
+    This is a text inside a div element.
+    <p>This paragraph has its own background color.</p>
+    We are still in the div element.
+  </div>
+  <hr>
+
+  <h2>Opacity / Transparency</h2>
+  <div class="first">
+    <h1>opacity 0.1</h1>
+  </div>
+
+  <div class="second">
+    <h1>opacity 0.3</h1>
+  </div>
+
+  <div class="third">
+    <h1>opacity 0.6</h1>
+  </div>
+
+  <div class="full">
+    <h1>opacity 1 (default)</h1>
+  </div>
+  <hr>
+
+  <h2>Transparency using RGBA</h2>
+  <div class="rgba10">
+    <h1>10% opacity</h1>
+  </div>
+
+  <div class="rgba30">
+    <h1>30% opacity</h1>
+  </div>
+
+  <div class="rgba60">
+    <h1>60% opacity</h1>
+  </div>
+
+  <div class="rgba100">
+    <h1>default</h1>
+  </div>
+  <hr>
+
+  <h2>Background Image</h2>
+
+  <p style="background-image: url('https://www.w3schools.com/html/img_girl.jpg');">
+  You can specify background images<br>
+  for any visible HTML element.<br>
+  In this example, the background image<br>
+  is specified for a p element.<br>
+  By default, the background-image<br>
+  will repeat itself in the direction(s)<br>
+  where it is smaller than the element<br>
+  where it is specified. Try resizing the<br>
+  browser window to see how the<br>
+  background image behaves.
+  </p>
+
+  <h2>Background Image: no-repeat</h2>
+
+  <p style="
+    background-image: url('https://www.w3schools.com/html/img_girl.jpg'); 
+    background-repeat: no-repeat;
+  ">
+  You can specify background images<br>
+  for any visible HTML element.<br>
+  In this example, the background image<br>
+  is specified for a p element.<br>
+  By default, the background-image<br>
+  will repeat itself in the direction(s)<br>
+  where it is smaller than the element<br>
+  where it is specified. Try resizing the<br>
+  browser window to see how the<br>
+  background image behaves.
+  </p>
+
+  <h2>Background Image: cover</h2>
+
+  <p style="
+    background-image: url('https://www.w3schools.com/html/img_girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  ">
+  You can specify background images<br>
+  for any visible HTML element.<br>
+  In this example, the background image<br>
+  is specified for a p element.<br>
+  By default, the background-image<br>
+  will repeat itself in the direction(s)<br>
+  where it is smaller than the element<br>
+  where it is specified. Try resizing the<br>
+  browser window to see how the<br>
+  background image behaves.
+  </p>
+
+  <h2>Background Image: stretch</h2>
+
+  <p style="
+    background-image: url('https://www.w3schools.com/html/img_girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  ">
+  You can specify background images<br>
+  for any visible HTML element.<br>
+  In this example, the background image<br>
+  is specified for a p element.<br>
+  By default, the background-image<br>
+  will repeat itself in the direction(s)<br>
+  where it is smaller than the element<br>
+  where it is specified. Try resizing the<br>
+  browser window to see how the<br>
+  background image behaves.
+  </p>
+
+</body>
+
+</html>

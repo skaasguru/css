@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div.box1 {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: width 2s, height 4s;
+    }
+
+    div.box1:hover {
+      width: 300px;
+      height: 300px;
+    }
+
+
+    div.box2 {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: width 2s;
+      color: white;
+      text-align: center;
+    }
+
+    div.box2:hover {
+      width: 300px;
+    }
+
+    #div1 {
+      transition-timing-function: linear;
+    }
+
+    #div2 {
+      transition-timing-function: ease;
+    }
+
+    #div3 {
+      transition-timing-function: ease-in;
+    }
+
+    #div4 {
+      transition-timing-function: ease-out;
+    }
+
+    #div5 {
+      transition-timing-function: ease-in-out;
+    }
+
+    div.box3 {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: width 2s, height 2s, transform 2s;
+    }
+
+    div.box3:hover {
+      width: 300px;
+      height: 300px;
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The transition Property</h1>
+
+  <p>Hover over the div element below, to see the transition effect:</p>
+
+  <div class="box1"></div>
+
+  <h2>The transition-timing-function Property</h2>
+
+  <p>Hover over the div elements below, to see the different speed curves:</p>
+
+  <div id="div1" class="box2">linear</div><br>
+  <div id="div2" class="box2">ease</div><br>
+  <div id="div3" class="box2">ease-in</div><br>
+  <div id="div4" class="box2">ease-out</div><br>
+  <div id="div5" class="box2">ease-in-out</div><br>
+
+
+
+  <h2>Transition + Transform</h2>
+
+  <p>Hover over the div element below:</p>
+
+  <div class="box3"></div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Inheritance Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 0;
+      color: brown;
+    }
+
+    /* Inheritable property (color) */
+    .container {
+      color: #2c3e50; /* This color will be inherited by child elements */
+      padding: 20px;
+      border: 2px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    /* Non-inheritable property (margin) */
+    .box {
+      margin: 10px; /* This will not be inherited by child elements */
+      background-color: #ecf0f1;
+      padding: 20px;
+    }
+    
+    .inherit-example {
+        background-color: cyan;
+    }
+
+    /* Example of `inherit` */
+    .inherit-example p {
+      background-color: inherit; /* Inherits background color from parent */
+    }
+
+    /* Example of `initial` */
+    .initial-example p {
+      color: initial; /* Resets color to default value (black) */
+    }
+
+    /* Example of `unset` */
+    .unset-example p {
+      font-size: unset; /* Resets font-size to either inherit or initial depending on context */
+    }
+
+    /* Example of inherited text properties */
+    .text-inheritance {
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+
+    .text-inheritance p {
+      margin: 0;
+      padding: 10px;
+    }
+
+    .inherit-container {
+      font-family: 'Georgia', serif;
+    }
+
+    /* Non-inheritable properties */
+    .non-inherit-example {
+      border: 2px solid #3498db; /* Not inherited */
+      padding: 10px;
+      margin-top: 30px;
+      background-color: #bdc3c7;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Inheritance Example</h1>
+
+  <!-- Inheritable property example -->
+  <div class="container">
+    <h2>Inheritable Property Example (color)</h2>
+    <p>This text inherits the color property from the parent container.</p>
+    <p>All text inside this div will inherit the same color, making it blue.</p>
+  </div>
+
+  <!-- Non-inheritable property example -->
+  <div class="box">
+    <h2>Non-inheritable Property Example (margin)</h2>
+    <p>The margin property is not inherited. This paragraph will not have the same margin as the parent container.</p>
+  </div>
+
+  <!-- Inherit value example -->
+  <div class="inherit-example">
+    <h2>Using the `inherit` Value</h2>
+    <p>This paragraph inherits the background-color from its parent element.</p>
+  </div>
+
+  <!-- Initial value example -->
+  <div class="initial-example">
+    <h2>Using the `initial` Value</h2>
+    <p>This paragraph uses the `initial` value for the color property, which resets it to the default browser value (black).</p>
+  </div>
+
+  <!-- Unset value example -->
+  <div class="unset-example">
+    <h2>Using the `unset` Value</h2>
+    <p>This paragraph uses the `unset` value for font-size. It either inherits the font size or sets it to its initial value, depending on context.</p>
+  </div>
+
+  <!-- Text Inheritance example -->
+  <div class="inherit-container">
+    <h2>Text Property Inheritance (font-size, line-height, font-weight)</h2>
+    <div class="text-inheritance">
+      <p>This paragraph inherits the font-size, line-height, and font-weight from the parent element.</p>
+      <p>The text is bold and properly spaced due to inheritance of these properties.</p>
+    </div>
+  </div>
+
+  <!-- Non-inheritable properties in action -->
+  <div class="non-inherit-example">
+    <h2>Non-Inheritable Properties</h2>
+    <p>The border and padding properties of this element are not inherited by child elements. You will need to apply them explicitly.</p>
+  </div>
+
+</body>
+</html>

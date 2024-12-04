@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    li {
+      display: inline;
+    }
+
+    span.block,
+    a.block {
+      display: block;
+    }
+
+    h3.hidden {
+      display: none;
+    }
+
+    h3.visibility-hidden {
+      visibility: hidden;
+    }
+
+    p {
+      background-color: blue;
+      padding: 10px;
+    }
+
+    span {
+      background-color: red;
+      color: white;
+      padding: 10px;
+    }
+
+    p.ex1 {
+      display: none;
+    }
+
+    p.ex2 {
+      display: inline;
+    }
+
+    p.ex3 {
+      display: block;
+    }
+
+    p.ex4 {
+      display: inline-block;
+    }
+
+    p.ex5 {
+      display: flex;
+    }
+
+    p.ex6 {
+      display: grid;
+    }
+
+    .nav {
+      background-color: yellow;
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      display: inline-block;
+      font-size: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>CSS Display Property</h2>
+
+  <div3>Display a list of links as a horizontal menu:</div3>
+
+  <ul>
+    <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+    <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+    <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+  </ul>
+  <hr>
+
+  <h3>Display span elements as block elements</h3>
+
+  <span class="block">A display property with</span> <span class="block">a value of "block" results in</span> <span
+    class="block">a line break between each span elements.</span>
+  <hr>
+
+  <h3>Display links as block elements</h3>
+
+  <a class="block" href="/html/default.asp" target="_blank">HTML</a>
+  <a class="block" href="/css/default.asp" target="_blank">CSS</a>
+  <a class="block" href="/js/default.asp" target="_blank">JavaScript</a>
+  <hr>
+
+  <h2>display: none </h2>
+  <h3>This is a visible heading</h3>
+  <h3 class="hidden">This is a hidden heading</h3>
+  <h4>Notice that the h1 element with display: none; does not take up any space.</h4>
+  <hr>
+
+  <h2>visibility: hidden</h2>
+  <h3>This is a visible heading</h3>
+  <h3 class="visibility-hidden">This is a hidden heading</h3>
+  <h4>Notice that the hidden heading still takes up space.</h4>
+  <hr>
+
+  <h2>display: inline-block</h2>
+
+  <h4>By default, list items are displayed vertically. In this example we use display: inline-block to display them
+    horizontally (side by side).</h4>
+    <h4>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</h4>
+
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <hr>
+
+      <h2>More Examples</h2>
+
+      <h1>The display Property</h1>
+
+      <h2>display: none:</h2>
+      <p class="ex1">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </p>
+
+      <h2>display: inline:</h2>
+      <p class="ex2">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </p>
+
+      <h2>display: block:</h2>
+      <p class="ex3">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </p>
+
+      <h2>display: inline-block:</h2>
+      <p class="ex4">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </p>
+
+      <h2>display: flex:</h2>
+      <p class="ex5">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </p>
+
+      <h2>display: grid:</h2>
+      <p class="ex6">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+      </p>
+</body>
+
+</html>

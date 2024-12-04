@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+  border: 3px solid green;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: unset;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.padding-center {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.lh-center {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.lh-center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.transform-center { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.transform-center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+}
+</style>
+</head>
+<body>
+
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+
+<div class="center">
+  <p>Hello World!</p>
+</div>
+<hr>
+
+<h2>Center Text</h2>
+
+<div class="text-center">
+  <p>This text is centered.</p>
+</div>
+<hr>
+
+
+
+<h2>Center an Image</h2>
+<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+<img class="center" src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width:40%">
+<hr>
+
+
+
+<h2>Right align with the position property</h2>
+
+<p>An example of how to right align elements with the position property:</p>
+
+<div class="right">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+<hr>
+
+
+
+<h2 style="margin-top: 150px">Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="img1" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+<h2 style="clear:right">With New Modern Clearfix</h2>
+<p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+<div class="clearfix">
+  <img class="img2" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+<hr>
+
+<h2>Center with padding and text-align</h2>
+
+<p>In this example, we use padding and text-align to center the div element both vertically and horizontally:</p>
+
+<div class="padding-center">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<hr>
+
+
+<h2>Center with line-height</h2>
+
+<p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+
+<div class="lh-center">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+<hr>
+
+
+
+<h2>Center with position and transform</h2>
+
+<p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+<div class="transform-center">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+<hr>
+
+
+
+<h2>Flexbox Centering</h2>
+
+<p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
+
+<div class="flex-center">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+<hr>
+</body>
+</html>
+
+
